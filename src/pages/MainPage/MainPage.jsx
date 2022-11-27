@@ -1,9 +1,10 @@
 import './MainPage.scss'
+import Header from '../../components/Header/Header'
 
 function MainPage() {
   return (
-    <div className="container">
-      <p>Aboba</p>
+    <div className="page-container">
+      <Header />
     </div>
   )
 }
