@@ -1,15 +1,19 @@
 import './Header.scss'
 import { navigationMain } from '../../mocks/navigationMain'
 import { navigationSocials } from '../../mocks/navigationSocials'
-import partOfHead from '../../assets/imgs/part_of_head.png'
+import headerMain from '../../assets/imgs/header-main.png'
+import dorZnaki from '../../assets/imgs/dor-znaki.png'
+import ladder from '../../assets/imgs/ladder.png'
 
-import { HandySvg } from 'handy-svg'
+import { Link } from 'react-router-dom'
 
-function Header() {
+// import { HandySvg } from 'handy_svg'
+
+function Header({ title, desc, mainInfoVisible }) {
   return (
-    <div className="header__wrapper">
-      <header className="header">
-        <div className="header__navigation navigation">
+    <header className="header">
+      <div className="header__wrapper gray">
+        <div className="header__navigation navigation page-container">
           <nav className="navigation__main">
             <ul className="navigation__main-list">
               {navigationMain.map(({id, text, href}) => (
@@ -24,18 +28,42 @@ function Header() {
               {navigationSocials.map(({id, href, icon}) => (
                 <li className="navigation__socials-list-item" key={id}>
                   <a href={href} className="navigation__socials-link">
-                    <HandySvg src={icon} width="40" height="40" alt="Socials icon" className="navigation__socials-icon" />
+                    <img src={icon} alt="Socials icon" className="navigation__socials-icon" />
                   </a>
                 </li>
               ))}
             </ul>
           </div>
         </div>
-        <div className="header__users-info users-info">
-          
+      </div>
+      <div className="header__wrapper white">
+        <div className="header__users-info users-info page-container">
+          <img src={headerMain} alt="Header main template" className="users-info__main-template" />
         </div>
-      </header>
-    </div>
+      </div>
+      <div className="header__wrapper gray">
+        <div className="header__catalogue-search catalogue-search page-container">
+          <div className="catalogue-search__show-btn">
+            <img src="" alt="" className="catalogue-search__icon" />
+            <Link to="/catalogue" className="catalogue-search__title">Каталог</Link>
+          </div>
+          <input type="text" className="catalogue-search__input" />
+          <button className="catalogue-search__search-btn">
+            <img src="" alt="" className="catalogue-search__search-btn-icon" />
+          </button>
+        </div>
+      </div>
+      {mainInfoVisible && (
+        <div className="header__main-info main-info">
+          <img src={dorZnaki} alt="Dor znaki" className="main-info__background" />
+          <div className="main-info__information">
+            <h1 className="main-info__title">{title}</h1>
+            <h3 className="main-info__desc">{desc}</h3>
+          </div>
+          <img src={ladder} alt="ladder" className="main-info__ladder" />
+        </div>
+      )}
+    </header>
   )
 }
 

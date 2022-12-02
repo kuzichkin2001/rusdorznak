@@ -1,5 +1,78 @@
 @import "../../styles/_layout.scss";
 
-.container {
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-x: hidden;
+}
+
+.page-container {
   @include container;
+}
+
+.znak-main {
+  margin: 65px 0;
+}
+
+.content-info {
+  margin-bottom: 75px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__desc {
+    width: 100%;
+    line-height: 24px;
+    text-align: left;
+    font-size: 16px;
+
+    &_bold {
+      font-weight: 700;
+    }
+  }
+
+  &__text-wrapper {
+    width: 50%;
+  }
+
+  &:nth-of-type(2n) &__item {
+    flex-direction: row-reverse;
+
+    .content-info__desc-wrapper {
+      width: 50%;
+
+      display: flex;
+
+      .content-info__text-wrapper {
+        width: 100%;
+      }
+
+      .content-info__highlighter {
+        display: block;
+        width: 3px;
+        height: inherit;
+        border-radius: 10px;
+
+        margin-right: 15px;
+
+        background-color: #FFBB00;
+      }
+      
+      .content-info__desc {
+        width: 100%;
+        line-height: 24px;
+        text-align: left;
+        font-size: 16px;
+
+        &_bold {
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }

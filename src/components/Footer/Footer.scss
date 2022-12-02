@@ -1,0 +1,96 @@
+.footer {
+  padding: 100px 0;
+  height: 500px;
+  position: relative;
+
+  &__inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-wrapper {
+    background-image: url('../../assets/imgs/footer-phone.jpg');
+    position: relative;
+  }
+
+  &__darkner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    z-index: 0
+  }
+
+  &__title {
+    font-size: 36px;
+    color: white;
+    font-weight: 700;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: white;
+  }
+  
+  &__delivery-form {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+
+    margin-bottom: 70px;
+  }
+
+  &__input {
+    padding: 15px;
+    font-size: 16px;
+    width: 30%;
+
+    border: 0;
+    outline: none;
+
+    border-radius: 5px;
+  }
+
+  &__dop {
+    color: white;
+    font-size: 16px;
+
+    margin-bottom: 70px;
+  }
+
+  &__terms {
+    color: #ffbb00;
+  }
+
+  &__submit-btn {
+    border: 0;
+    outline: none;
+
+    border-radius: 5px;
+    padding: 19px 40px;
+    background-color: #DE3409;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all .33s;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: #ef4510;
+      transition: all .33s;
+    }
+  }
+}
+
+.last-title {
+  margin-bottom: 50px;
+}
