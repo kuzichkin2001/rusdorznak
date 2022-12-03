@@ -2,14 +2,13 @@ import './Header.scss'
 import { navigationMain } from '../../mocks/navigationMain'
 import { navigationSocials } from '../../mocks/navigationSocials'
 import headerMain from '../../assets/imgs/header-main.png'
-import dorZnaki from '../../assets/imgs/dor-znaki.png'
 import ladder from '../../assets/imgs/ladder.png'
 
 import { Link } from 'react-router-dom'
 
 // import { HandySvg } from 'handy_svg'
 
-function Header({ title, desc, mainInfoVisible }) {
+function Header({ title, desc, mainInfoVisible, img }) {
   return (
     <header className="header">
       <div className="header__wrapper gray">
@@ -55,7 +54,7 @@ function Header({ title, desc, mainInfoVisible }) {
       </div>
       {mainInfoVisible && (
         <div className="header__main-info main-info">
-          <img src={dorZnaki} alt="Dor znaki" className="main-info__background" />
+          <img src={img} alt="Dor znaki" className="main-info__background" />
           <div className="main-info__information">
             <h1 className="main-info__title">{title}</h1>
             <h3 className="main-info__desc">{desc}</h3>

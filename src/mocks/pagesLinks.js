@@ -41,7 +41,7 @@ export const pagesLinks = [
   },
   {
     id: 9,
-    href: '/kataphot',
+    href: '/retroreflectors',
     title: 'Дорожные световозвращатели (катафоты)',
   },
   {
