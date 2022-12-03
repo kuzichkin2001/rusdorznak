@@ -64,6 +64,7 @@ function VerticalPage() {
         mainInfoVisible={true}
         img={verticalBg}
         title="Знаки вертикальной разметки"
+        isShort
       />
 
       <div className="page-container vertical">

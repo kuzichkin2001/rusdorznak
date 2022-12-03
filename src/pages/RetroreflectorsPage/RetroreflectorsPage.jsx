@@ -105,6 +105,7 @@ function RetroreflectorsPage() {
         mainInfoVisible={true}
         img={retroreflectorsBg}
         title="Дорожные световозвращатели (катафоты)"
+        isShort
       />
 
       <div className="page-container retroreflectors">
