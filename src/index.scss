@@ -17,3 +17,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+label {
+  font-weight: 500;
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 7px;
+}
+
+select {
+  font: inherit;
+  width: 255px;
+  height: 40px;
+  outline: none;
+  color: #828282;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #BDBDBD;
+
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+select:not([multiple]) {
+  padding-right: 1.2em;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.85em) 0.85em;
+  background-size: 0.65em auto;
+  background-image: url('./assets/imgs/select-arrow.svg');
+}

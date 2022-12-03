@@ -5,6 +5,7 @@ import dorZnakiBg from '../../assets/imgs/dor-znaki.png'
 import contentInfoFirst from '../../assets/imgs/content_info_first.png'
 import contentInfoSecond from '../../assets/imgs/content_info_second.png'
 import Details from '../../components/Details/Details'
+import PropSuperView from '../../components/PropSuperView/PropSuperView'
 
 function MainPage() {
   return (
@@ -58,7 +59,22 @@ function MainPage() {
         </div>
       </div>
       <Details />
-      <Footer />
+
+      <div className="super-view__wrapper">
+        <div className="super-view page-container">
+          <h1 className="super-view__title">
+            Дорожный знак 5.19.1 с оптико-волоконной подсветкой
+          </h1>
+          <div className="super-view__inner">
+            <PropSuperView />
+
+          </div>
+        </div>
+      </div>
+
+      <Footer
+        deliveryVisible
+      />
     </div>
   )
 }
