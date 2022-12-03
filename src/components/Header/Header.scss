@@ -171,6 +171,34 @@ a, a:visited {
         right: 0;
     }
 
+    &__arr {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 1250px;
+
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &__item {
+            display: flex;
+
+            &-icon {
+                width: 30px;
+                height: 30px;
+                margin: auto 0;
+                margin-right: 20px;
+            }
+            &-title {
+                margin: auto 0;
+                font-weight: 500;
+                font-size: 18px;
+                color: #FFB800;
+            }
+        }
+    }
+
     &__information {
         position: absolute;
         top: 50%;
@@ -185,8 +213,11 @@ a, a:visited {
     }
 
     &__title {
+        margin: 0 auto;
+        margin-bottom: 100px;
         color: white;
-        font-size: 48px;
+        line-height: 76px;
+        font-size: 62px;
         font-weight: 700;
     }
 
@@ -194,4 +225,8 @@ a, a:visited {
         color: #ffbb00;
         font-size: 30px;
     }
+}
+
+.short-title {
+    width: 60%;
 }

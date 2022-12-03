@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom"
-
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
 import AdvantagesMini from "../../components/AdvantagesMini/AdvantagesMini"
 
 import { retroreflectorsProducts } from '../../mocks/retroreflectorsProducts';
-import { advantagesMini } from '../../mocks/advantagesMini';
+import { advantagesMiniRetroreflectors } from '../../mocks/advantagesMini';
 
 import retroreflectorsBg from '../../assets/imgs/retroreflectors_bg.png'
 import infoImg from '../../assets/imgs/retroreflectors_img-1.png'
@@ -107,6 +106,7 @@ function RetroreflectorsPage() {
         mainInfoVisible
         img={retroreflectorsBg}
         title="Дорожные световозвращатели (катафоты)"
+        isShort
       />
 
       <div className="page-container retroreflectors">
@@ -128,7 +128,7 @@ function RetroreflectorsPage() {
         </div>
       </div>
 
-      <AdvantagesMini arr={advantagesMini} />
+      <AdvantagesMini arr={advantagesMiniRetroreflectors} />
 
       <div className="page-container retroreflectors">
         <div className="retroreflectors__products">

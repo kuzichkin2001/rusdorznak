@@ -51,7 +51,7 @@ export const pagesLinks = [
   },
   {
     id: 11,
-    href: '/idn',
+    href: '/unevenness',
     title: 'Искусственная дорожная неровность (ИДН), демпферы, колесоотбойники',
   },
 ]
