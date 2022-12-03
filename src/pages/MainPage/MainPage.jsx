@@ -1,6 +1,7 @@
 import './MainPage.scss'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import dorZnakiBg from '../../assets/imgs/dor-znaki.png'
 import contentInfoFirst from '../../assets/imgs/content_info_first.png'
 import contentInfoSecond from '../../assets/imgs/content_info_second.png'
 import Details from '../../components/Details/Details'
@@ -12,6 +13,7 @@ function MainPage() {
         mainInfoVisible
         title="Дорожные знаки с оптико-волоконной засветкой"
         desc="Уникальная новейшая технология! Полностью собственное производство!"
+        img={dorZnakiBg}
       />
       <div className="page-container znak-main">
         <div className="content-info">
