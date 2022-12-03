@@ -3,8 +3,10 @@ import imgTwo from '../assets/imgs/advantages-2.svg';
 import imgThree from '../assets/imgs/advantages-3.svg';
 import imgFour from '../assets/imgs/advantages-4.svg';
 import imgFive from '../assets/imgs/advantages-5.svg';
+import imgSix from '../assets/imgs/advantages-6.svg';
+import imgSeven from '../assets/imgs/advantages-7.svg';
 
-export const advantagesMini = [
+export const advantagesMiniRetroreflectors = [
   {
     id: 1,
     url: imgOne,
@@ -19,6 +21,34 @@ export const advantagesMini = [
     id: 3,
     url: imgThree,
     title: 'Ударопрочный материал',
+  },
+  {
+    id: 4,
+    url: imgFour,
+    title: 'Доставка по всей России',
+  },
+  {
+    id: 5,
+    url: imgFive,
+    title: 'Гарантия на всю продукцию',
+  },
+]
+
+export const advantagesMiniVertical = [
+  {
+    id: 1,
+    url: imgSix,
+    title: 'Сертифицированные материалы',
+  },
+  {
+    id: 2,
+    url: imgTwo,
+    title: 'Яркое отражение света',
+  },
+  {
+    id: 3,
+    url: imgSeven,
+    title: 'Изготавливаем в соответствии с ГОСТ',
   },
   {
     id: 4,
