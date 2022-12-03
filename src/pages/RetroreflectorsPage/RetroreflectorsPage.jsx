@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
 import AdvantagesMini from "../../components/AdvantagesMini/AdvantagesMini"
@@ -102,7 +103,7 @@ function RetroreflectorsPage() {
   return (
     <div className="App">
       <Header
-        mainInfoVisible={true}
+        mainInfoVisible
         img={retroreflectorsBg}
         title="Дорожные световозвращатели (катафоты)"
         isShort
@@ -138,7 +139,7 @@ function RetroreflectorsPage() {
       </div>
       
       <Footer
-        deliveryVisible={true}
+        deliveryVisible
       />
     </div>
   )
