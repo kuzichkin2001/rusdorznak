@@ -104,7 +104,7 @@ function RetroreflectorsPage() {
   return (
     <div className="App">
       <Header
-        mainInfoVisible={true}
+        mainInfoVisible
         img={retroreflectorsBg}
         title="Дорожные световозвращатели (катафоты)"
       />
@@ -139,7 +139,7 @@ function RetroreflectorsPage() {
       </div>
       
       <Footer
-        deliveryVisible={true}
+        deliveryVisible
       />
     </div>
   )

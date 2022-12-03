@@ -29,11 +29,11 @@
             font-size: 18px;
             color: #FFFFFF;
             margin-top: 25px;
-            transition: 0.22s;
+            transition: 0.33s;
 
             &:hover {
-                background: #cd2b02;
-                transition: 0.22s;
+                background: #ef4510;
+                transition: 0.33s;
             }
         }
 
@@ -108,7 +108,7 @@
                             background-repeat: no-repeat;
                             background-position: calc(100% - 0.85em) 0.85em;
                             background-size: 0.65em auto;
-                            background-image: url('./../../assets//imgs/select-arrow.svg');
+                            background-image: url('./../../assets/imgs/select-arrow.svg');
                         }
                     }
                 }

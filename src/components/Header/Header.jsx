@@ -3,6 +3,8 @@ import { navigationMain } from '../../mocks/navigationMain'
 import { navigationSocials } from '../../mocks/navigationSocials'
 import headerMain from '../../assets/imgs/header-main.png'
 import ladder from '../../assets/imgs/ladder.png'
+import burger from '../../assets/imgs/burger.svg'
+import search from '../../assets/imgs/search.svg'
 
 import { Link } from 'react-router-dom'
 
@@ -43,12 +45,12 @@ function Header({ title, desc, mainInfoVisible, img }) {
       <div className="header__wrapper gray">
         <div className="header__catalogue-search catalogue-search page-container">
           <div className="catalogue-search__show-btn">
-            <img src="" alt="" className="catalogue-search__icon" />
+            <img src={burger} alt="Burger Catalogue" className="catalogue-search__icon" />
             <Link to="/catalogue" className="catalogue-search__title">Каталог</Link>
           </div>
           <input type="text" className="catalogue-search__input" />
           <button className="catalogue-search__search-btn">
-            <img src="" alt="" className="catalogue-search__search-btn-icon" />
+            <img src={search} alt="" className="catalogue-search__search-btn-icon" />
           </button>
         </div>
       </div>
