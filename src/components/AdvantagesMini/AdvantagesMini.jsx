@@ -6,8 +6,10 @@ function AdvantagesMini({ arr }) {
       <div className="advantagesMini page-container">
         {arr.map((item) => (
           <div className="advantagesMini__item">
-            <img src={item.url} alt="img" className="advantagesMini__item-img" />
-            <p className="advantagesMini__item-title">{item.title}</p>
+            <div className="advantagesMini__content">
+              <img src={item.url} alt="img" className="advantagesMini__item-img" />
+              <p className="advantagesMini__item-title">{item.title}</p>
+            </div>
           </div>
         ))}
       </div>

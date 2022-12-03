@@ -6,6 +6,8 @@ import RetroreflectorsPage from './pages/RetroreflectorsPage/RetroreflectorsPage
 import UnevennessPage from './pages/UnevennessPage/UnevennessPage'
 
 import './App.scss'
+import SvetDorZnakiPage from './pages/SvetDorZnakiPage/SvetDorZnakiPage'
+import SvetodiodPage from './pages/SvetodiodPage/SvetodiodPage'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="/retroreflectors" element={<RetroreflectorsPage />} />
       <Route path="/vertical" element={<VerticalPage />} />
       <Route path="/unevenness" element={<UnevennessPage />} />
+      <Route path="/zagrad" element={<SvetDorZnakiPage />} />
+      <Route path="/svetodiod" element={<SvetodiodPage />} />
     </Routes>
   )
 }
