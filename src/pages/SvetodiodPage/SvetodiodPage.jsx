@@ -13,8 +13,38 @@ import mainSvetContent from '../../assets/imgs/main-content-svet.png'
 import Checkbox from '../../components/Checkbox/Checkbox'
 
 import tooltip from '../../assets/imgs/tooltip.svg'
+import roadWork from '../../assets/imgs/dorozh-rab.png'
+
+import cart from '../../assets/imgs/cart.svg'
 
 function SvetodiodPage() {
+  const roadWorkArray = [
+    {
+      id: 1,
+      hasStrobo: true,
+    },
+    {
+      id: 2,
+      hasStrobo: false,
+    },
+    {
+      id: 3,
+      hasStrobo: true,
+    },
+    {
+      id: 4,
+      hasStrobo: false,
+    },
+    {
+      id: 5,
+      hasStrobo: false,
+    },
+    {
+      id: 6,
+      hasStrobo: false,
+    },
+  ]
+
   return (
     <div className="App">
       <Header
@@ -86,7 +116,7 @@ function SvetodiodPage() {
                       </select>
                     </fieldset>
                     <fieldset className="svet__second-col-fieldset">
-                      <label htmlFor="size" className="svet__second-col-label">Тип пленки</label>
+                      <label htmlFor="size" className="svet__second-col-label">Размер</label>
                       <select name="size" id="size" className="svet__second-col-select">
                         <option value="500" className="svet__second-col-option">500 мм</option>
                         <option value="700" className="svet__second-col-option" selected>700 мм</option>
@@ -120,12 +150,84 @@ function SvetodiodPage() {
                   </form>
 
                   <div className="svet__summary">
-                    <div className="svet__cost"></div>
+                    <div className="svet__cost">
+                      <p className="svet__cost-title">Стоимость</p>
+                      <p className="svet__cost-current">5 490 рублей</p>
+                    </div>
+                    <button className="svet__add-to-cart-btn">В корзину</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="road-work__wrapper">
+        <div className="road-work__container page-container">
+          <ul className="road-work__list">
+            {roadWorkArray.map(({ id, hasStrobo }) => (
+              <li className="road-work__elem" key={id}>
+                <h2 className="road-work__title">
+                  Светодиодный дорожный знак 1.25 «Дорожные работы»
+                </h2>
+                <div className="road-work__main-elem">
+                  <div className="road-work__cols">
+                    <div className="road-work__first-col">
+                      <img src={roadWork} alt="Main svet content" className="svet__first-col-img" />
+                    </div>
+                    <div className="road-work__second-col">
+                      <div className="road-work__second-col-data">
+                        <form className="road-work__second-col-form">
+                          <fieldset className="road-work__second-col-fieldset">
+                            <label htmlFor="plenka" className="road-work__second-col-label special">Тип пленки</label>
+                            <select name="plenka-type" id="plenka" className="road-work__second-col-select">
+                              <option value="А" className="road-work__second-col-option" selected>Тип А</option>
+                              <option value="Б" className="road-work__second-col-option">Тип Б</option>
+                              <option value="В" className="road-work__second-col-option">Тип В</option>
+                              <option value="Г" className="road-work__second-col-option">Тип Г</option>
+                            </select>
+                          </fieldset>
+                          <fieldset className="road-work__second-col-fieldset">
+                            <label htmlFor="size" className="road-work__second-col-label special">Размер</label>
+                            <select name="size" id="size" className="road-work__second-col-select">
+                              <option value="500" className="road-work__second-col-option">500 мм</option>
+                              <option value="700" className="road-work__second-col-option" selected>700 мм</option>
+                              <option value="900" className="road-work__second-col-option">900 мм</option>
+                            </select>
+                          </fieldset>
+                          <fieldset className="road-work__second-col-fieldset">
+                            <div>
+                              <label htmlFor="weight" className="road-work__second-col-label">Вес</label>
+                              <p className="road-work__second-col-text" id="weight">3,5 кг</p>
+                            </div>
+                            
+                            <div>
+                              <label htmlFor="capability" className="road-work__second-col-label">Мощность</label>
+                              <p className="road-work__second-col-text" id="capability">5 Вт</p>
+                            </div>
+                          </fieldset>
+                          {hasStrobo && (
+                            <fieldset className="road-work__second-col-fieldset">
+                              <Checkbox size="20px" />
+                              <label htmlFor="strobo" className="road-work__second-col-label">Стробоскопы</label>
+                            </fieldset>
+                          )}
+                        </form>
+
+                        <div className="road-work__summary">
+                          <div className="road-work__cost">
+                            <p className="road-work__cost-title">Стоимость</p>
+                            <p className="road-work__cost-current">5 490 рублей</p>
+                          </div>
+                          <img src={cart} alt="" className="road-work__add-to-cart-icon" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       <Footer
