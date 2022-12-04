@@ -12,54 +12,6 @@ import unevenness__info from '../../assets/imgs/unevenness__info.png'
 
 import './UnevennessPage.scss'
 
-const ProductItem = (item) => {
-  return (
-    <div className="unevenness__products__item">
-      <img src={item.url} alt="product img" className="unevenness__products__item-img" />
-
-      <div className="unevenness__products__item__info">
-        <p className="unevenness__products__item__info-title">{item.title}</p>
-
-        <div className="unevenness__products__item__info-selects">
-          <form>
-            <label>Тип пленки</label>
-            <select selected={'Тип Б'}>
-              <option value="Тип А">Тип А</option>
-              <option value="Тип Б">Тип Б</option>
-              <option value="Тип В">Тип В</option>
-            </select>
-          </form>
-          <form>
-            <label>Размер</label>
-            <select selected={'1250 х 250 мм'}>
-              <option value="1250 х 250 мм">1250 х 250 мм</option>
-              <option value="750 x 150 мм">750 x 150 мм</option>
-            </select>
-          </form>
-          <form>
-            <label>Отбортовка</label>
-            <select selected={'Одинарная'}>
-              <option value="Одинарная">Одинарная</option>
-              <option value="Двойная">Двойная</option>
-              <option value="Тройная">Тройная</option>
-            </select>
-          </form>
-        </div>
-
-        <p className="unevenness__products__item__info-text">
-          <strong>Материал:</strong> {item.material}
-        </p>
-      </div>
-
-      <div className="unevenness__products__item__result">
-        <p className="unevenness__products__item__result-text">Стоимость</p>
-        <p className="unevenness__products__item__result-price">От {item.price} рублей</p>
-        <button className="unevenness__products__item__result-buy">В корзину</button>
-      </div>
-    </div>
-  )
-}
-
 function UnevennessPage() {
   const [counterOne, setCounterOne] = useState(1.5);
   const [counterTwo, setCounterTwo] = useState(2);

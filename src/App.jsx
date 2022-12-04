@@ -4,10 +4,12 @@ import CataloguePage from './pages/CataloguePage/CataloguePage'
 import VerticalPage from './pages/VerticalPage/VerticalPage'
 import RetroreflectorsPage from './pages/RetroreflectorsPage/RetroreflectorsPage'
 import UnevennessPage from './pages/UnevennessPage/UnevennessPage'
-
-import './App.scss'
 import SvetDorZnakiPage from './pages/SvetDorZnakiPage/SvetDorZnakiPage'
 import SvetodiodPage from './pages/SvetodiodPage/SvetodiodPage'
+import TrafficLightsPage from './pages/TrafficLightsPage/TrafficLightsPage'
+import MirrorsPage from './pages/MirrorsPage/MirrorsPage'
+
+import './App.scss'
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <Route path="/unevenness" element={<UnevennessPage />} />
       <Route path="/zagrad" element={<SvetDorZnakiPage />} />
       <Route path="/svetodiod" element={<SvetodiodPage />} />
+      <Route path="/trafficLight" element={<TrafficLightsPage />} />
+      <Route path="/mirrors" element={<MirrorsPage />} />
     </Routes>
   )
 }

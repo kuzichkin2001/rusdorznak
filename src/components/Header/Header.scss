@@ -225,9 +225,15 @@ a, a:visited {
     &__desc {
         color: #ffbb00;
         font-size: 30px;
+        line-height: 45px;
+        margin: 0 auto;
     }
 }
 
 .short-title {
     width: 60%;
+}
+
+.short-desc {
+    width: 70%;
 }

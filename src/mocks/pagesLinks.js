@@ -31,12 +31,12 @@ export const pagesLinks = [
   },
   {
     id: 7,
-    href: '/sphere_mirror',
+    href: '/mirrors',
     title: 'Сферические дорожные зеркала',
   },
   {
     id: 8,
-    href: '/t7',
+    href: '/trafficLight',
     title: 'Светодиодные светофоры Т7',
   },
   {
