@@ -10,7 +10,15 @@ import { Link } from 'react-router-dom'
 
 // import { HandySvg } from 'handy_svg'
 
-function Header({ title, desc, mainInfoVisible, img, arr, isShort }) {
+function Header({
+  title,
+  desc,
+  mainInfoVisible,
+  img,
+  arr,
+  isShort,
+  snoska
+}) {
   return (
     <header className="header">
       <div className="header__wrapper gray">
@@ -71,6 +79,7 @@ function Header({ title, desc, mainInfoVisible, img, arr, isShort }) {
           <div className="main-info__information">
             <h1 className={`main-info__title ${isShort ? 'short-title' : ''}`}>{title}</h1>
             <h3 className={`main-info__desc ${isShort ? 'short-desc' : ''}`}>{desc}</h3>
+            <h4 className="main-info__snoska">*{snoska}</h4>
           </div>
           <img src={ladder} alt="ladder" className="main-info__ladder" />
         </div>

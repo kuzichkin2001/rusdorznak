@@ -1,0 +1,131 @@
+.svet-indication {
+  &__item {
+    width: 29%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    border: 1px solid #BDBDBD;
+    height: 620px;
+    margin-bottom: 40px;
+    transition: all .22s;
+
+    padding: 30px 15px;
+
+    &:hover {
+      border: 1px solid #de3409;
+      transition: all .22s;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 20px;
+
+    margin: 20px 0;
+  }
+
+  &__desc {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+
+    margin-bottom: 15px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__models {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    text-align: left;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__check {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+  }
+
+  &__check-label {
+    margin-left: 15px;
+
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__sub-desc {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    margin-bottom: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__summary {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__prev {
+    text-decoration: line-through;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  &__current {
+    color: #de3409;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  &__add-to-cart-btn {
+    color: white;
+    background-color: #de3409;
+    padding: 13px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .33s;
+
+    &:hover {
+      background-color: #ef4510;
+      transition: all .33s;
+    }
+  }
+}

@@ -39,7 +39,69 @@ import lights8 from '../assets/imgs/lights-8.svg'
 import lights9 from '../assets/imgs/lights-9.svg'
 import lights10 from '../assets/imgs/lights-10.svg'
 
+import autonom1 from '../assets/imgs/autonom1.svg'
+import autonom2 from '../assets/imgs/autonom2.svg'
+import autonom3 from '../assets/imgs/autonom3.svg'
+import autonom4 from '../assets/imgs/autonom4.svg'
+import autonom5 from '../assets/imgs/autonom5.svg'
+import autonom6 from '../assets/imgs/autonom6.svg'
+import autonom7 from '../assets/imgs/autonom7.svg'
+import autonom8 from '../assets/imgs/autonom8.svg'
+import autonom9 from '../assets/imgs/autonom9.svg'
+import autonom10 from '../assets/imgs/autonom10.svg'
 
+export const advantagesMiniAutonom = [
+  {
+    id: 1,
+    url: autonom1,
+    title: 'Повышенная видимость знака'
+  },
+  {
+    id: 2,
+    url: autonom2,
+    title: 'Можно установить в любом месте'
+  },
+  {
+    id: 3,
+    url: autonom3,
+    title: 'Не требуют регулировки и обслуживания'
+  },
+  {
+    id: 4,
+    url: autonom4,
+    title: 'Не нужно подключать к электросети'
+  },
+  {
+    id: 5,
+    url: autonom5,
+    title: 'Нет затрат на электроэнергию'
+  },
+  {
+    id: 6,
+    url: autonom6,
+    title: 'Низкое энергопотребление'
+  },
+  {
+    id: 7,
+    url: autonom7,
+    title: 'Нет затрат на прокладку кабелей, выкапывание траншей'
+  },
+  {
+    id: 8,
+    url: autonom8,
+    title: 'Нет потребности в оформлении разрешительной и проектной документации'
+  },
+  {
+    id: 9,
+    url: autonom9,
+    title: 'Нет зависимости от перебоев в электроснабжении'
+  },
+  {
+    id: 10,
+    url: autonom10,
+    title: 'Температура эксплуатации от -70 до +50 градусов'
+  },
+]
 
 export const svetodiodArrDara = [
   {

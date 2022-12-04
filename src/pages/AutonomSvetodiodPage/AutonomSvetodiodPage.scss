@@ -1,0 +1,50 @@
+.autonom-znaki {
+  &__wrapper {
+    width: 100%;
+  }
+}
+
+.autonom-znak {
+  &__cols {
+    display: flex;
+    margin-bottom: 100px;
+    justify-content: space-between;
+  }
+
+  & .zagrad-znak__first-col {
+    width: 40%;
+  }
+
+  & .zagrad-znak__prev-price {
+    text-decoration: none;
+  }
+
+  &:nth-of-type(2n) > &__cols {
+    flex-direction: row-reverse;
+  }
+
+  &__item-title {
+    width: 70%;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    line-height: 40px;
+    
+    margin-left: 15px;
+    margin-bottom: 60px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: -15px;
+      width: 3px;
+      height: 100%;
+      background-color: #DE3409;
+
+      border-radius: 10px;
+    }
+  }
+}
