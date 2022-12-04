@@ -28,6 +28,19 @@ import svetodiod8 from '../assets/imgs/svetodiod-icon8.svg'
 import svetodiod9 from '../assets/imgs/svetodiod-icon9.svg'
 import svetodiod10 from '../assets/imgs/svetodiod-icon10.svg'
 
+import lights1 from '../assets/imgs/lights-1.svg'
+import lights2 from '../assets/imgs/lights-2.svg'
+import lights3 from '../assets/imgs/lights-3.svg'
+import lights4 from '../assets/imgs/lights-4.svg'
+import lights5 from '../assets/imgs/lights-5.svg'
+import lights6 from '../assets/imgs/lights-6.svg'
+import lights7 from '../assets/imgs/lights-7.svg'
+import lights8 from '../assets/imgs/lights-8.svg'
+import lights9 from '../assets/imgs/lights-9.svg'
+import lights10 from '../assets/imgs/lights-10.svg'
+
+
+
 export const svetodiodArrDara = [
   {
     id: 1,
@@ -186,6 +199,59 @@ export const advantagesMiniZagrad = [
   {
     id: 10,
     url: zagrad10,
+    title: 'Гарантия на всю продукцию',
+  },
+]
+
+export const trafficLightsArr = [
+  {
+    id: 1,
+    url: lights1,
+    title: 'Низкое энергопотребление',
+  },
+  {
+    id: 2,
+    url: lights2,
+    title: 'Длительный срок службы светодиодов',
+  },
+  {
+    id: 3,
+    url: lights3,
+    title: 'Ударопрочный материал',
+  },
+  {
+    id: 4,
+    url: lights4,
+    title: 'Легкость обслуживания',
+  },
+  {
+    id: 5,
+    url: lights5,
+    title: 'Устойчивы к любым погодным условиям',
+  },
+  {
+    id: 6,
+    url: lights6,
+    title: 'Отличная видимость с разных углов обзора',
+  },
+  {
+    id: 7,
+    url: lights7,
+    title: 'Собственное производство',
+  },
+  {
+    id: 8,
+    url: lights8,
+    title: 'Доставка по всей России',
+  },
+  {
+    id: 9,
+    url: lights9,
+    title: 'Сертифицированные материалы',
+  },
+  {
+    id: 10,
+    url: lights10,
     title: 'Гарантия на всю продукцию',
   },
 ]

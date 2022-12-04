@@ -1,6 +1,11 @@
 .checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #DE3409;
   border-radius: 5px;
+
+  cursor: pointer;
 
   transition: all .17s;
 }
