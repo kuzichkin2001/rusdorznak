@@ -81,7 +81,7 @@ function ZagradZnakProp({ item }) {
                 {item.complectation.map((comp, idx) => (
                   <>
                     <p className="zagrad-znak__stat-complectation-item">
-                      <span>{idx})</span> {comp}
+                      <span>{idx}</span> {comp}
                     </p>
                   </>
                 ))}
